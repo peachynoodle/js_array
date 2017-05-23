@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>JavaScript Arrays</title>
+</head>
+
+<body>
+<script>
+function contains(list, item) {
+
+    for (i=0; i<list.length; i++) {
+
+        if (item == list[i]) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// Examples...
+
+var planets = ['Mecury',  'Venus',  'Earth',  'Mars',
+               'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+
+document.write(planets.length + "<br>");
+document.write(planets[0] + "<br>");
+document.write(planets[2] + "<br>");
+
+document.write("<br>");
+
+for (var i=0; i<planets.length; i++) {
+    document.write(planets[i] + "<br>");
+}
+document.write("<br>");
+
+document.write( contains(planets, "Jupiter") + "<br>");
+document.write( contains(planets, "Pluto") + "<br>");
+
+document.write("<br>");
+
+
+// Your turn...
+
+// 0. Write a statment that refers to your planets list by index to print Saturn.
+document.write(planets[5] + "<br>");
+
+// 1. Create your own array of at least 10 famous astronomers.
+var astronomers = ['Galileo',  'Copernicus',  'Kepler',  'Hubble',
+               'Brahe', 'Newton', 'Sagan', 'Ptolemy', 'Herschel', 'Huygens'];
+
+// 2. Write a statement that prints the number of astronomers in your list.
+document.write(astronomers.length + "<br>");
+
+// 3. Write a statement that prints the name of the first astronomer in your list.
+document.write(astronomers[0] + "<br>");
+
+// 4. Write a statement that prints the name of the last astronomer in your list.
+document.write(astronomers[9] + "<br>");
+
+// 5. Write a for loop that prints each astronomers name on a separate line.
+document.write("<br>");
+
+for (var i=0; i<astronomers.length; i++) {
+    document.write(astronomers[i] + "<br>");
+}
+
+document.write("<br>");
+// 6. Demonstrate an instance of using the contains method that returns true and
+//    an instance that returns false for your astronomers array.
+
+document.write( contains(astronomers, 'copernicus') + "<br>");
+document.write( contains(astronomers, 'Hawking') + "<br>");
+
+document.write("<br>");
+
+// 7. Modify the contains method so that it is not case-sensitive.
+
+
+// 8. Demonstrate that your contains method is not case-sensitive.
+
+
+// 9. Nah. You're done.
+
+</script>
+
+</body>
+</html>
